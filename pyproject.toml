@@ -7,11 +7,10 @@ license = "Proprietary"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9.14"
+python = "^3.9"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.12.0"
 flake8 = "^6.0.0"
 mypy = "^0.991"
 pre-commit = "^2.21.0"
