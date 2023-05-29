@@ -43,7 +43,7 @@ class Bottleverse:
             return '1 bottle of beer on the wall.\n'
         elif number == 0:
             return 'no more bottles of beer on the wall.\n'
-        elif number <= 0:
+        elif number == -1:
             return '99 bottles of beer on the wall.\n'
         return f'{number} bottles of beer on the wall.\n'
 
