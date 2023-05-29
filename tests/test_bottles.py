@@ -17,7 +17,7 @@ def test_bottle_verse_has_lyrics():
 
 def test_verse_single():
     expected: str = 'This is verse 500.\n'
-    actual: str = bottles.CountDownSong(FakeVerse).verse(500)
+    actual: str = bottles.CountDownSong(verse=FakeVerse).verse(number=500)
     assert actual == expected
 
 
