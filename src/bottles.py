@@ -1,4 +1,9 @@
-from typing import Optional
+from typing import Optional, Protocol
+
+
+class Verse(Protocol):
+    @staticmethod
+    def lyrics(number: int) -> str: ...
 
 
 class Bottleverse:
@@ -46,7 +51,7 @@ class Bottleverse:
 class CountDownSong:
     def __init__(
         self,
-        verse: Bottleverse,
+        verse: Verse,
         high: Optional[int] = None,
         low: Optional[int] = None
     ):
