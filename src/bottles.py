@@ -9,7 +9,7 @@ class Verse(Protocol):
 class Bottleverse:
 
     @staticmethod
-    def lyrics(number: int):
+    def lyrics(number: int) -> str:
         lyric: str = (
             Bottleverse.create_line_one(number) +
             Bottleverse.create_line_two(number) +
