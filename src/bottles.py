@@ -37,15 +37,19 @@ class Bottleverse:
 
     @staticmethod
     def create_line_three(number) -> str:
-        if number == 6:
-            return '1 six-pack of beer on the wall.\n'
-        elif number == 1:
-            return '1 bottle of beer on the wall.\n'
-        elif number == 0:
-            return 'no more bottles of beer on the wall.\n'
-        elif number == -1:
-            return '99 bottles of beer on the wall.\n'
-        return f'{number} bottles of beer on the wall.\n'
+        line: str
+        match number:
+            case 6:
+                line = '1 six-pack of beer on the wall.\n'
+            case 1:
+                line = '1 bottle of beer on the wall.\n'
+            case 0:
+                line = 'no more bottles of beer on the wall.\n'
+            case -1:
+                line = '99 bottles of beer on the wall.\n'
+            case _:
+                line = f'{number} bottles of beer on the wall.\n'
+        return line
 
 
 class CountDownSong:
