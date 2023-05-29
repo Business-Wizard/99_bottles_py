@@ -28,11 +28,12 @@ class Bottleverse:
 
     @staticmethod
     def create_line_two(number) -> str:
-        if number == 0:
-            return 'Go to the store and buy some more, '
-        elif number == 1:
-            return 'Take it down and pass it around, '
-        return 'Take one down and pass it around, '
+        line: str
+        match number:
+            case 0: line = 'Go to the store and buy some more, '
+            case 1: line = 'Take it down and pass it around, '
+            case _: line = 'Take one down and pass it around, '
+        return line
 
     @staticmethod
     def create_line_three(number) -> str:
