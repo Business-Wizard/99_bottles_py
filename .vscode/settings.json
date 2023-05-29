@@ -4,7 +4,6 @@
             50
         ]
     },
-    "audioCues.lineHasInlineSuggestion": "on",
     "better-comments.highlightPlainText": true,
     "debug.console.fontFamily": "Fira Code, default",
     "diffEditor.codeLens": true,
@@ -103,7 +102,7 @@
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.localEchoEnabled": "on",
     "terminal.integrated.shellIntegration.enabled": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -1,
     "workbench.editor.pinnedTabSizing": "shrink",
     "workbench.iconTheme": "vscode-icons"
 }
