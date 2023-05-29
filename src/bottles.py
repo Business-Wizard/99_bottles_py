@@ -19,13 +19,12 @@ class Bottleverse:
 
     @staticmethod
     def create_line_one(number) -> str:
-        if number == 6:
-            return '1 six-pack of beer on the wall, 1 six-pack of beer.\n'
-        elif number == 1:
-            return '1 bottle of beer on the wall, 1 bottle of beer.\n'
-        elif number == 0:
-            return 'No more bottles of beer on the wall, no more bottles of beer.\n'
-        return f'{number} bottles of beer on the wall, {number} bottles of beer.\n'
+        match number:
+            case 6: line = '1 six-pack of beer on the wall, 1 six-pack of beer.\n'
+            case 1: line = '1 bottle of beer on the wall, 1 bottle of beer.\n'
+            case 0: line = 'No more bottles of beer on the wall, no more bottles of beer.\n'
+            case _: line = f'{number} bottles of beer on the wall, {number} bottles of beer.\n'
+        return line
 
     @staticmethod
     def create_line_two(number) -> str:
